@@ -1,348 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Under Construction</title>
+    <title>MPTY | Oliver Aiku</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Special+Elite&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Portfolio of Oliver Aiku - Python Developer, Machine Learning Enthusiast, Automation Engineer and Gamer.">
 
-<style>
+    <meta name="theme-color" content="#000000">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-body{
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-height:100vh;
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Special+Elite&display=swap"
+        rel="stylesheet">
 
-display:flex;
-justify-content:center;
-align-items:center;
-
-font-family:'Cinzel',serif;
-
-background:
-linear-gradient(rgba(10,6,4,.65),rgba(10,6,4,.85)),
-url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80");
-
-background-size:cover;
-background-position:center;
-
-overflow:hidden;
-
-color:white;
-
-}
-
-.overlay{
-
-position:absolute;
-width:100%;
-height:100%;
-
-background-image:
-radial-gradient(rgba(255,255,255,.03) 1px, transparent 1px);
-
-background-size:4px 4px;
-
-opacity:.2;
-
-}
-
-.card{
-
-position:relative;
-
-width:90%;
-max-width:850px;
-
-padding:60px;
-
-background:rgba(20,14,10,.75);
-
-border:3px solid #a7782f;
-
-box-shadow:
-0 0 60px black,
-0 0 20px rgba(255,180,80,.2);
-
-text-align:center;
-
-backdrop-filter:blur(5px);
-
-}
-
-h1{
-
-font-size:65px;
-
-color:#f6c36c;
-
-text-shadow:4px 4px 8px black;
-
-letter-spacing:4px;
-
-}
-
-h2{
-
-font-family:'Special Elite',cursive;
-
-margin-top:15px;
-
-font-size:24px;
-
-font-weight:normal;
-
-color:#ddd;
-
-}
-
-.line{
-
-width:180px;
-height:3px;
-background:#b6822d;
-margin:25px auto;
-
-}
-
-.description{
-
-font-size:18px;
-
-line-height:1.8;
-
-color:#ddd;
-
-margin-top:20px;
-
-}
-
-.skills{
-
-margin-top:35px;
-
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-
-}
-
-.skill{
-
-padding:12px 20px;
-
-border:1px solid #b98b42;
-
-background:rgba(255,180,50,.08);
-
-font-size:15px;
-
-letter-spacing:1px;
-
-transition:.3s;
-
-}
-
-.skill:hover{
-
-background:#b6822d;
-
-color:black;
-
-transform:translateY(-5px);
-
-}
-
-.games{
-
-margin-top:30px;
-
-font-size:16px;
-
-color:#c8c8c8;
-
-}
-
-.loader{
-
-margin:40px auto 15px;
-
-width:100%;
-height:10px;
-
-border:2px solid #b6822d;
-
-overflow:hidden;
-
-}
-
-.bar{
-
-height:100%;
-width:0;
-
-background:#d9a84c;
-
-animation:load 4s infinite;
-
-}
-
-@keyframes load{
-
-0%{width:0;}
-100%{width:100%;}
-
-}
-
-.status{
-
-font-family:'Special Elite';
-
-font-size:16px;
-
-color:#d9a84c;
-
-letter-spacing:2px;
-
-}
-
-.footer{
-
-margin-top:45px;
-
-font-size:14px;
-
-color:#888;
-
-letter-spacing:2px;
-
-}
-
-@media(max-width:768px){
-
-.card{
-
-padding:35px 20px;
-
-}
-
-h1{
-
-font-size:42px;
-
-}
-
-.description{
-
-font-size:16px;
-
-}
-
-}
-
-</style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div class="overlay"></div>
+    <!-- Background Video -->
 
-<div class="card">
+    <video autoplay muted loop playsinline id="bg-video">
 
-<h1>UNDER CONSTRUCTION</h1>
+        <source src="outlaws-path-to-redemption.3840x2160.mp4" type="video/mp4">
 
-<h2>"Every Legend Starts Somewhere."</h2>
+    </video>
 
-<div class="line"></div>
+    <!-- Dark Overlay -->
 
-<p class="description">
+    <div class="overlay"></div>
 
-Howdy, traveler.
+    <!-- Floating Embers -->
 
-This portfolio is currently being built.
+    <div class="embers">
 
-Soon you'll discover projects, automation tools,
-machine learning models, and software crafted with passion.
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
-The journey has just begun.
+    </div>
 
-</p>
+    <!-- Navigation -->
 
-<div class="skills">
+    <header>
 
-<div class="skill">🐍 Python</div>
+        <div class="logo">
 
-<div class="skill">🤖 Machine Learning</div>
+            MPTY
 
-<div class="skill">⚡ Selenium</div>
+        </div>
 
-<div class="skill">🌐 Web Development</div>
+        <nav>
 
-<div class="skill">💻 Software Development</div>
+            <a href="#">Home</a>
 
-</div>
+            <a href="#">About</a>
 
-<div class="games">
+            <a href="#">Projects</a>
 
-Inspired by adventures in
+            <a href="#">Skills</a>
 
-🤠 Red Dead Redemption 2 • 🚗 GTA • ⚔️ God of War
+            <a href="#">Contact</a>
 
-</div>
+        </nav>
 
-<div class="loader">
+    </header>
 
-<div class="bar"></div>
+    <!-- Hero -->
 
-</div>
+    <main>
 
-<div class="status">
+        <section class="hero">
 
-Preparing the next mission...
+            <div class="hero-content">
 
-</div>
+                <p class="small">
 
-<div class="footer">
+                    SOFTWARE DEVELOPER
 
-© 2026 • Portfolio Coming Soon
+                </p>
 
-</div>
+                <h1>
 
-</div>
+                    OLIVER AIKU
 
-<script>
+                </h1>
 
-const text=[
-"Preparing the next mission...",
-"Loading Python modules...",
-"Training Machine Learning models...",
-"Sharpening Selenium scripts...",
-"Building the frontier..."
-];
+                <h2 id="typing"></h2>
 
-let i=0;
+                <div class="line"></div>
 
-setInterval(()=>{
+                <p class="description">
 
-document.querySelector(".status").innerHTML=text[i];
+                    Welcome to my frontier.
 
-i++;
+                    <br><br>
 
-if(i>=text.length)i=0;
+                    I'm passionate about building software that solves real-world problems.
 
-},2500);
+                    I specialize in Python development, Machine Learning,
+                    Selenium automation and modern web technologies.
 
-</script>
+                    Inspired by immersive worlds like
+                    <strong>Red Dead Redemption 2</strong>,
+                    <strong>GTA</strong>,
+                    and
+                    <strong>God of War</strong>.
+
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#" class="btn">
+
+                        View Portfolio
+
+                    </a>
+
+                    <a href="https://github.com/OliverAiku0002"
+                        target="_blank"
+                        class="btn secondary">
+
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+
+        <section class="skills">
+
+            <h3>
+
+                MY SKILLS
+
+            </h3>
+
+            <div class="skill-grid">
+
+                <div class="card">
+
+                    🐍
+
+                    <h4>Python</h4>
+
+                </div>
+
+                <div class="card">
+
+                    🤖
+
+                    <h4>Machine Learning</h4>
+
+                </div>
+
+                <div class="card">
+
+                    ⚡
+
+                    <h4>Selenium</h4>
+
+                </div>
+
+                <div class="card">
+
+                    🌐
+
+                    <h4>HTML / CSS</h4>
+
+                </div>
+
+                <div class="card">
+
+                    💻
+
+                    <h4>JavaScript</h4>
+
+                </div>
+
+                <div class="card">
+
+                    🧠
+
+                    <h4>Problem Solving</h4>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+
+        <section class="projects">
+
+            <h3>
+
+                CURRENT STATUS
+
+            </h3>
+
+            <div class="project-card">
+
+                <h4>
+
+                    🚧 UNDER CONSTRUCTION
+
+                </h4>
+
+                <p>
+
+                    My complete portfolio is currently being crafted.
+
+                    Soon you'll discover projects related to
+
+                    Machine Learning,
+
+                    Python,
+
+                    Automation,
+
+                    Game Development,
+
+                    and much more.
+
+                </p>
+
+                <div class="loader">
+
+                    <div class="progress"></div>
+
+                </div>
+
+                <span id="status">
+
+                    Preparing the next mission...
+
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 MPTY.IN
+
+        </p>
+
+        <p>
+
+            Built with ❤️ by Oliver Aiku
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
