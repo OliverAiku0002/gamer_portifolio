@@ -657,3 +657,15 @@ nav a{
 }
 
 }
+
+nav a.active{
+
+    color:#d8a74f;
+
+}
+
+nav a.active::after{
+
+    width:100%;
+
+}
